@@ -1,7 +1,7 @@
 services:
   app:
     image: unifyapps-devops
-    container_name: unifyapps_app
+    container_name: clouddock_app
     expose:
       - "5000"
     environment:
@@ -9,7 +9,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: unifyapps_nginx
+    container_name: clouddock_nginx
     ports:
       - "80:80"
     volumes:
