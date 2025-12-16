@@ -1,6 +1,6 @@
 services:
   app:
-    image: unifyapps-devops
+    image: clouddock-cicd
     container_name: clouddock_app
     expose:
       - "5000"
