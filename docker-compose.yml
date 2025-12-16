@@ -1,5 +1,8 @@
 services:
   app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
     image: clouddock-cicd
     container_name: clouddock_app
     expose:
