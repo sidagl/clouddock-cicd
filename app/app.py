@@ -6,10 +6,12 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({
-        "service": "UnifyApps DevOps Demo",
-        "status": "running",
-        "env": os.getenv("ENV", "dev")
+    "env": os.getenv("ENV", "production"),
+    "service": "UnifyApps DevOps Demo",
+    "status": "running",
+    "version": "v2 - CI/CD working 🎉"
     })
+
 
 @app.route("/health")
 def health():
